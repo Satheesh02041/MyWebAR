@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AR View</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <script async src="https://docs.opencv.org/4.5.5/opencv.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.0/build/three.min.js"></script>
+  <style>
+    #cameraWindow {
+      width: 80vw;
+      height: 60vh;
+      margin: auto;
+      border: 2px solid green;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" autoplay playsinline style="display:none;"></video>
+  <canvas id="canvas" width="640" height="480"></canvas>
+  <script src="/static/js/ar-opencv.js"></script>
+</body>
+</html>
